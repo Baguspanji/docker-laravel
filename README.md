@@ -23,7 +23,7 @@
 - lalu anda dapat menjalankan perintah php seperti 
 - `php artisan ..`.
 
-# Masuk ke terminal Laravel
+# Masuk ke database
 - untuk melakukan koneksi ke database gunakan aplikasi seperti Mysql Workbench atau TablePlus
 - lalu set ke database 
 
