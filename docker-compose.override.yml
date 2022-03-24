@@ -20,3 +20,7 @@ services:
       - nginx
       # - cache
       # - mail
+
+volumes:
+  dbdata:
+    driver: local

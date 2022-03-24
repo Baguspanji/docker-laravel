@@ -15,6 +15,7 @@ services:
     ports:
       - ${DB_PORT}:3306
     volumes:
+      - dbdata:/var/lib/mysql
       - ./volumes/mysql:/docker-entrypoint-initdb.d
     networks:
       - creaper

@@ -34,14 +34,3 @@ docker-compose exec app /bin/sh
 ```
 php artisan ..
 ```
-
-# Masuk ke database
-- untuk melakukan koneksi ke database gunakan aplikasi seperti Mysql Workbench atau TablePlus
-```
-- lalu set ke database 
-> server : 0.0.0.0
-> port : 33060
-> database : laravel
-> username : laravel
-> password : laravel
-```
