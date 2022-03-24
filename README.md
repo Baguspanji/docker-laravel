@@ -11,17 +11,17 @@
 # Menjalankan Docker
 - jalankan docker composer dengan perintah 
 ```
-`docker-compose up -d app`
+docker-compose up -d app
 ```
 
 # Menjalankan perintah php
 - untuk menjalankan perintah php pada laravel bisa dengan 
 ```
-`docker-compose exec app php artisan ..`
+docker-compose exec app php artisan ..
 ```
 - untuk menjalankan perintah composer pada laravel bisa dengan 
 ```
-`docker-compose exec app composer require ..`
+docker-compose exec app composer require ..
 ```
 
 # Masuk ke terminal Laravel
@@ -30,16 +30,16 @@
 - `docker-compose exec app /bin/sh`.
 - lalu anda dapat menjalankan perintah php seperti 
 ```
-`php artisan ..`
+php artisan ..
 ```
 
 # Masuk ke database
 - untuk melakukan koneksi ke database gunakan aplikasi seperti Mysql Workbench atau TablePlus
 ```
 - lalu set ke database 
-> *server : 0.0.0.0*
-> *port : 33060*
-> *database : laravel*
-> *username : laravel*
-> *password : laravel*
+> server : 0.0.0.0
+> port : 33060
+> database : laravel
+> username : laravel
+> password : laravel
 ```
