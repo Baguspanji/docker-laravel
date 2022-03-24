@@ -5,7 +5,7 @@
 - sesuaikan environment.
 - jalankan docker composer dengan perintah 
 ```
-`docker-compose build app`
+docker-compose build app
 ```
 
 # Menjalankan Docker
