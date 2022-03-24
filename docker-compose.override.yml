@@ -4,17 +4,17 @@ services:
   app:
     build:
       args:
-        user: puspa
+        user: ${APP_NAME}
       context: ./volumes/php
       dockerfile: Dockerfile
-    image: puspa
-    container_name: puspa-app
+    image: ${APP_NAME}
+    container_name: ${APP_NAME}-app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
       - ${APP_SRC}:/var/www
     networks:
-      - puspa
+      - creaper
     depends_on:
       - db
       - nginx

@@ -3,7 +3,7 @@ version: "3"
 services:
   db:
     image: mysql:8
-    container_name: puspa-db
+    container_name: ${APP_NAME}-db
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
@@ -17,11 +17,11 @@ services:
     volumes:
       - ./volumes/mysql:/docker-entrypoint-initdb.d
     networks:
-      - puspa
+      - creaper
 
   nginx:
     image: nginx:alpine
-    container_name: puspa-nginx
+    container_name: ${APP_NAME}-nginx
     restart: unless-stopped
     ports:
       - ${APP_PORT}:80
@@ -29,7 +29,7 @@ services:
       - ${APP_SRC}:/var/www
       - ./volumes/nginx:/etc/nginx/conf.d
     networks:
-      - puspa
+      - creaper
 
   # mail:
   #   image: 'mailhog/mailhog:latest'
@@ -45,5 +45,5 @@ services:
   #     - 63792:6379
 
 networks:
-  puspa:
+  creaper:
     driver: bridge
