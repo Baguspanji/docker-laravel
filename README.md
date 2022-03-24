@@ -9,8 +9,8 @@
 - jalankan docker composer dengan perintah `docker-compose up -d app`.
 
 # Menjalankan perintah php
-- untuk menjalankan perintah php pada laravel seperti `docker-compose exec app php artisan ..`.
-- untuk menjalankan perintah composer pada laravel seperti `docker-compose exec app composer require ..`.
+- untuk menjalankan perintah php pada laravel bisa dengan `docker-compose exec app php artisan ..`.
+- untuk menjalankan perintah composer pada laravel bisa dengan `docker-compose exec app composer require ..`.
 
 # Masuk ke terminal Laravel
 - atau anda dapat menjalankan perintah
