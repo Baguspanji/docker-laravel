@@ -27,7 +27,9 @@ docker-compose exec app composer require ..
 # Masuk ke terminal Laravel
 - atau anda dapat menjalankan perintah
 - jalankan docker composer dengan perintah 
-- `docker-compose exec app /bin/sh`.
+```
+docker-compose exec app /bin/sh
+```
 - lalu anda dapat menjalankan perintah php seperti 
 ```
 php artisan ..
